@@ -1,0 +1,104 @@
+@import url(./general.css);
+
+
+.nav_container{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0 ,0 ,0.5);
+    color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+}
+.list_container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.logo{
+    font-size: 25px;
+    display: flex;
+    padding-left: 5px;
+    align-items: center;
+}
+.logo:hover{
+    color: var(--primary-color);
+}
+.list_items{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.list_items ul{
+    display: flex;
+}
+ul.notactive{
+    margin: 0;
+}
+.list_items .li{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+.list_items .li:hover,.icons i:hover{
+    color:var(--primary-color);
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.icons i{
+    padding: 10px;
+    align-content: center;
+}
+.social button{
+    height: fit-content;
+    margin: 5px;
+}
+.social button:hover{
+    background-color: black;
+    box-shadow: none;
+}
+.toggler{
+    display: none;
+    padding: 5px 15px;
+    margin-right: 20px;
+    font-size: 30px;
+}
+@media (max-width:767px){
+    .nav_container{
+        justify-content: space-between;
+    }
+    .social,.list_items ul{
+        display: none;
+    }
+    .toggler{
+        display: block;
+    }
+    ul.active {
+    display: block;
+    position: absolute;
+    top: 99%;
+    left: 0; 
+    background-color: rgba(0, 0 ,0 ,0.5);
+    width: 100%;
+    padding: 0;
+    }
+    ul.active .li{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+

@@ -1,0 +1,73 @@
+@import url(./general.css);
+
+.boxes_title{
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+}
+.boxes_title h2:nth-child(1){
+    color: var(--primary-color);
+    font-family: "Birthstone", cursive;
+    font-size: 50px;
+}
+.boxes_title h2:last-child{
+    font-size: 50px;
+}
+.box_container{
+    padding: 10px;
+}
+
+.im_container{
+    height: 60%;
+    position: relative;
+}
+
+.im_container::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image:url(/public/white-like.png);
+    background-size: 100px 100px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: rgba(220, 220, 220, 0.523);
+    transition: all ease 0.2s;
+    opacity: 0;
+}
+.im_container:hover::before{
+    opacity: 1;
+}
+.im_container img{
+    width: 100%;
+    height: 100%;
+}
+.box_container h2{
+    font-size: 25px;
+}
+.box_container p{
+    font-size: 15px;
+}
+.box_container button{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 8px;
+    border: none;
+    border: 2px solid white;
+    box-shadow: 0 0 0  3px var(--primary-color);
+}
+.box_container button:hover{
+        background-color: var(--hover);
+    box-shadow:0 0 0 3px var(--hover);
+}
+.box_content{
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+.boxes_container{
+    width: 80%;
+    margin: auto;
+}

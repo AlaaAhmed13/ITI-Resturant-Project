@@ -1,0 +1,354 @@
+/* Reset */
+@import url(../component/general.css);
+
+/* ========== HEADER SECTION ========== */
+.heroo {
+    height: 500px;
+background-image: url('/public/picc1.jpg');
+  background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlayy {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.btn:hover {
+    background-color: var(--hover);
+}
+
+/* ========== BOOKING SECTION ========== */
+.booking {
+    padding: 60px;
+    background-color: white;
+}
+
+.booking-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.booking-img img {
+    max-width: 400px;
+    width: 100%;
+}
+
+.booking-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.booking-form .sub-title {
+    font-family: "Birthstone", cursive;
+    font-size: 50px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.booking-form h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.booking-form p {
+    color: #444;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.form-row input {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+}
+
+.submit-btn {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: var(--primary-color);
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: var(--hover);
+}
+
+/* ========== CLIENTS SECTION ========== */
+.clients {
+background-image: url('/public/picc3.jpg');
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clients-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.clients h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.clients h1 span {
+    color: white;
+}
+
+.clients h1 strong {
+    color: var(--primary-color);
+}
+
+.clients-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all ease .3s;
+}
+
+.clients-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-color: var(--primary-color);
+
+}
+
+/* ========== ATMOSPHERE SECTION ========== */
+.atmosphere-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 40px;
+    min-width: 300px;
+}
+
+.text-content .highlight {
+    font-family: "Birthstone", cursive;
+    color: var(--primary-color);
+    font-size: 50px;
+    font-style: italic;
+}
+
+.text-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.text-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.gallery-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-btn:hover {
+    background-color: var(--hover);
+    color: white;
+    text-decoration: none;
+}
+
+.image-content {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    min-width: 300px;
+}
+
+.image-frame {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 5px;
+    position: relative;
+}
+
+.image-frame img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slider-dots {
+    margin-top: 15px;
+}
+
+.dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #ddd;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: var(--primary-color);
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 1024px) {
+    .overlayy {
+        padding: 20px 30px;
+    }
+
+    .booking-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .booking-img img {
+        max-width: 100%;
+    }
+
+    .text-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .atmosphere-section {
+        padding: 40px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-content {
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .right-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .clients h1 {
+        font-size: 30px;
+    }
+
+    .booking-form h1,
+    .text-content h1 {
+        font-size: 28px;
+    }
+
+    .gallery-btn,
+    .submit-btn,
+    .btn {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    .clients-btn {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}
+
+.hover-textt {
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 700px;
+}
+
+.hover-textt h2 span {
+    font-family: "Birthstone", cursive;
+    font-size: 50px;
+    color: var(--primary-color);
+    font-style: italic;
+}
+
+.hover-textt h1 {
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+.hover-textt p {
+    font-size: 16px;
+    color: #eee;
+}
+
+.heroo:hover .hover-textt {
+    opacity: 1;
+}

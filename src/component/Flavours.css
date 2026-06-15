@@ -1,0 +1,30 @@
+.flavours-section {
+  /* background-image: url('/flavours.png'); ✅ صح */
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.overlay-text {
+  text-align: center;
+  color: white;
+  position: absolute;
+}
+
+.flavours-subtitle {
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  color: #f1c40f;
+  margin: 0;
+}
+
+.flavours-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+}

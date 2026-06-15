@@ -1,0 +1,42 @@
+@import url(./general.css);
+
+.landing{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-size: 100% 500px;
+    background-image: url(/public/background.jpg);
+}
+
+.landing:hover .content{
+    opacity: 1;
+}
+.landing .content{
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    opacity: 0;    
+}
+.content h1{
+    color: var(--primary-color);
+    font-family: "Birthstone", cursive;
+    font-size: 60px;
+}
+.content .h2{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+.landing .content .h2::before{
+    content: " ";
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+}

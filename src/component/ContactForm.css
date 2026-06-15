@@ -1,0 +1,115 @@
+@import url(../component/general.css);
+
+.ContactLanding{
+  background-image: url(/public/header_contact.jpg);
+}
+
+.contact-container {
+  background: white; 
+  color: #333;
+  padding: 50px 20px;
+}
+
+.contact-overlay {
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+  padding: 40px 30px;
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.contact-overlay h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-overlay p {
+  font-family: serif; 
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 14px;
+  color: #666;
+}
+
+.contact-overlay h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.contact-overlay p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 18px;
+  color: #666;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  /* رجّعنا الخط العادي */
+  font-family: inherit;
+}
+
+.left-fields,
+.right-field {
+  width: 100%;
+  max-width: 420px; 
+  display: flex;
+  flex-direction: column;
+  gap: 25px; 
+  margin: auto;
+}
+
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  font-family: serif;
+  border: 1px solid #2c2b2b93;
+  box-shadow: 0px 0px 2px rgba(90, 89, 89, 0.555);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  border-color: #4b4949;
+  outline: none;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+.send-button {
+  text-align: center;
+  margin-top: 35px;
+  width: 100%;
+}
+
+.send-button button {
+  background-color: var(--primary-color);
+  border: 2px solid white;
+  padding: 12px 25px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 3px;
+  font-family: inherit;
+  transition:  background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.send-button button:hover {
+  background-color: var(--hover);
+  color: white;
+}
